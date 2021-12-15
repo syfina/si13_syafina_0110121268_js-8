@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penjumlahan</title>
+</head>
+<body>
+  
+
+  <form action="">
+    <input 
+      id="bil1"
+      type="number" 
+      value="0"
+      onchange="hitung()"
+    />
+    +
+    <input 
+      id="bil2"
+      type="number" 
+      value="0"
+      onchange="hitung()"
+    />
+    =
+    <input 
+      id="hasil"
+      type="number"
+      value="0"
+    />
+  </form>
+
+  <script>
+    function hitung() {
+      const bil1 = Number(document.getElementById('bil1').value);
+      const bil2 = Number(document.getElementById('bil2').value);
+      const hasil = document.getElementById('hasil');
+
+      const result = bil1 + bil2;
+
+      hasil.value = result;
+    }
+  </script>
+
+</body>
+</html>

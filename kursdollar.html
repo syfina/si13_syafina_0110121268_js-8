@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurs Dollar</title>
+</head>
+<body>
+
+  <label for="dollar">Dollar</label>
+  <input id="dollar" type="number">
+
+  <button onclick="hitungKursDollar()">Hitung</button>
+
+  <label for="rupiah">Rupiah</label>
+  <input id="rupiah" type="number">
+
+
+  <script>
+
+    function hitungKursDollar() {
+      const dollar = document.getElementById('dollar');
+      const rupiah = document.getElementById('rupiah');
+
+      rupiah.value = dollar.value * 14650;
+    }
+
+  </script>
+</body>
+</html>
